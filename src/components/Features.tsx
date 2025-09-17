@@ -107,20 +107,62 @@ export function DatacenterLocations() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {locations.map((location, index) => (
-            <Card key={index} className="p-6 text-center shadow-card hover:shadow-hero transition-smooth group">
-              <div className="gradient-hero w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse-glow">
-                <location.icon className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-foreground mb-2">
-                {location.city}
-              </h3>
-              <p className="text-accent font-semibold">
-                {location.tier}
-              </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Description on Left */}
+          <div className="space-y-8">
+            <div className="space-y-6">
+              {locations.map((location, index) => (
+                <div key={index} className="flex items-center gap-4 p-4 bg-background rounded-lg shadow-card">
+                  <div className="gradient-hero w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    <location.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">
+                      {location.city}
+                    </h3>
+                    <p className="text-accent font-semibold">
+                      {location.tier} Datacenter
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            <Card className="p-6 bg-background shadow-card">
+              <h3 className="text-xl font-bold text-foreground mb-4">Key Features</h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-center gap-3">
+                  <Activity className="w-5 h-5 text-accent" />
+                  99.99% Uptime SLA guarantee
+                </li>
+                <li className="flex items-center gap-3">
+                  <Zap className="w-5 h-5 text-accent" />
+                  Redundant power & cooling systems
+                </li>
+                <li className="flex items-center gap-3">
+                  <Shield className="w-5 h-5 text-accent" />
+                  24×7 physical security monitoring
+                </li>
+                <li className="flex items-center gap-3">
+                  <Server className="w-5 h-5 text-accent" />
+                  NVMe SSD storage infrastructure
+                </li>
+              </ul>
             </Card>
-          ))}
+          </div>
+          
+          {/* Map Placeholder on Right */}
+          <div className="relative">
+            <Card className="p-8 shadow-hero">
+              <div className="aspect-square bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
+                  <p className="text-lg font-semibold text-foreground mb-2">Interactive Map</p>
+                  <p className="text-sm text-muted-foreground">(Map will be integrated here)</p>
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

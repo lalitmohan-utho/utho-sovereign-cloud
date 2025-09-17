@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { FAQ } from "@/components/FAQ";
 import { FeatureGrid, DatacenterLocations } from "@/components/Features";
+import { CustomerLogos, Testimonials } from "@/components/Customers";
 import { 
   Rocket, 
   DollarSign, 
@@ -161,42 +162,28 @@ const Index = () => {
               </Button>
             </div>
             
+            {/* Laptop Mockup for Platform Demo Video */}
             <div className="relative">
-              <Card className="p-8 shadow-hero animate-float">
-                <div className="gradient-card rounded-lg p-6">
-                  <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-lg font-semibold text-foreground">Utho Console</h3>
-                    <Badge className="gradient-accent text-accent-foreground">Live</Badge>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div className="grid grid-cols-3 gap-4">
-                      <div className="bg-background rounded-lg p-4 text-center">
-                        <div className="text-2xl font-bold text-primary">12</div>
-                        <div className="text-sm text-muted-foreground">Active VMs</div>
-                      </div>
-                      <div className="bg-background rounded-lg p-4 text-center">
-                        <div className="text-2xl font-bold text-accent">99.9%</div>
-                        <div className="text-sm text-muted-foreground">Uptime</div>
-                      </div>
-                      <div className="bg-background rounded-lg p-4 text-center">
-                        <div className="text-2xl font-bold text-success">₹2,340</div>
-                        <div className="text-sm text-muted-foreground">This Month</div>
-                      </div>
-                    </div>
-                    
-                    <div className="bg-background rounded-lg p-4">
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-sm font-medium text-foreground">CPU Usage</span>
-                        <span className="text-sm text-muted-foreground">68%</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="gradient-accent h-2 rounded-full" style={{width: '68%'}}></div>
+              <div className="relative mx-auto max-w-2xl">
+                {/* Laptop Base */}
+                <div className="relative bg-muted-foreground rounded-t-2xl p-2 shadow-hero">
+                  {/* Screen */}
+                  <div className="bg-background rounded-lg overflow-hidden shadow-inner aspect-video">
+                    {/* Video Placeholder - Replace with actual video embed */}
+                    <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                      <div className="text-center">
+                        <Play className="w-16 h-16 text-primary mx-auto mb-4" />
+                        <p className="text-lg font-semibold text-foreground">Platform Demo Video</p>
+                        <p className="text-sm text-muted-foreground">(Video will be embedded here)</p>
                       </div>
                     </div>
                   </div>
                 </div>
-              </Card>
+                {/* Laptop Bottom */}
+                <div className="bg-muted-foreground h-4 rounded-b-3xl shadow-lg relative">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 top-1 w-8 h-2 bg-muted rounded-full"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -232,6 +219,12 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Customer Logos */}
+      <CustomerLogos />
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* Pricing Link Section */}
       <section className="py-24 bg-secondary/30">
