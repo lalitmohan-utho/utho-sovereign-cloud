@@ -1,0 +1,106 @@
+{
+  "features": [
+    {
+      "title": "Predictable Pricing",
+      "description": "Pay-as-you-go with no hidden fees. Transparent billing you can trust.",
+      "icon": "dollar-sign"
+    },
+    {
+      "title": "High Performance",
+      "description": "Dedicated CPU and 3000+ IOPS block storage for lightning-fast applications.",
+      "icon": "zap"
+    },
+    {
+      "title": "Secure by Design",
+      "description": "Enterprise encryption, VPC isolation, and DDoS protection built-in.",
+      "icon": "shield"
+    },
+    {
+      "title": "24×7 Local Support",
+      "description": "Human-first assistance from India-based experts whenever you need it.",
+      "icon": "headphones"
+    },
+    {
+      "title": "Open & Flexible",
+      "description": "API-driven platform with no vendor lock-in. Your data, your choice.",
+      "icon": "unlock"
+    }
+  ],
+  "locations": [
+    {
+      "city": "Noida",
+      "tier": "Tier III"
+    },
+    {
+      "city": "Mumbai",
+      "tier": "Tier IV"
+    },
+    {
+      "city": "Bangalore",
+      "tier": "Tier III"
+    },
+    {
+      "city": "Hyderabad",
+      "tier": "Tier III"
+    }
+  ],
+  "customers": [
+    { "name": "TechCorp", "logo": "TC" },
+    { "name": "DataFlow", "logo": "DF" },
+    { "name": "CloudStart", "logo": "CS" },
+    { "name": "InnovateLab", "logo": "IL" },
+    { "name": "ScaleForce", "logo": "SF" },
+    { "name": "DevMatrix", "logo": "DM" },
+    { "name": "MetricPro", "logo": "MP" },
+    { "name": "SynergyTech", "logo": "ST" }
+  ],
+  "testimonials": [
+    {
+      "name": "Rajesh Kumar",
+      "company": "TechCorp Solutions",
+      "role": "CTO",
+      "quote": "Utho's infrastructure helped us scale from 10K to 1M users seamlessly. The transparent pricing and local support make all the difference for Indian businesses.",
+      "rating": 5
+    },
+    {
+      "name": "Priya Sharma",
+      "company": "DataFlow Analytics",
+      "role": "DevOps Lead",
+      "quote": "Migration was effortless with Utho's expert team. Our costs dropped by 40% while performance improved significantly. Best IaaS decision we've made.",
+      "rating": 5
+    },
+    {
+      "name": "Amit Patel",
+      "company": "CloudStart Innovations",
+      "role": "Founder & CEO",
+      "quote": "Data sovereignty was crucial for our fintech startup. Utho's India-based infrastructure ensures compliance while delivering enterprise-grade reliability.",
+      "rating": 5
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What makes Utho stand out among India's IaaS service providers?",
+      "answer": "Utho combines transparent pricing, 24×7 local support, and India-based Tier III/IV data centers for unmatched reliability."
+    },
+    {
+      "question": "How does Utho's pricing compare to other IaaS service providers?",
+      "answer": "Our pay-as-you-go model eliminates hidden charges and offers up to 60% savings compared to global hyperscalers."
+    },
+    {
+      "question": "Can I scale infrastructure up or down quickly?",
+      "answer": "Yes. Utho's console lets you adjust compute, storage, and bandwidth instantly, paying only for what you use."
+    },
+    {
+      "question": "Is my data secure with Utho IaaS?",
+      "answer": "Absolutely—encryption, VPC isolation, and regular security audits keep your data protected under Indian jurisdiction."
+    },
+    {
+      "question": "Does Utho require long-term contracts?",
+      "answer": "No. Choose hourly or monthly billing and cancel anytime without penalties."
+    },
+    {
+      "question": "Do you provide migration support?",
+      "answer": "Yes. Our experts help you migrate workloads with zero downtime and no vendor lock-in."
+    }
+  ]
+}
